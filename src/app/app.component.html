@@ -1,0 +1,14 @@
+<button (click)="getData('mahima')">click me</button>
+<br />
+<br />
+<input type="text" #box1 placeholder="keyup" (keyup)="getData(box1.value)" />
+<input
+  type="text"
+  #box2
+  placeholder="keydown"
+  (keydown)="getData(box2.value)"
+/>
+<input type="text" #box3 placeholder="input" (input)="getData(box3.value)" />
+<br /><br />
+<h1 (mouseover)="getData('hi')">Mahima</h1>
+<h1 (mouseleave)="getData('hi')">Mahima raj</h1>
