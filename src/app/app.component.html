@@ -12,3 +12,11 @@
 <br /><br />
 <h1 (mouseover)="getData('hi')">Mahima</h1>
 <h1 (mouseleave)="getData('hi')">Mahima raj</h1>
+<h1>{{ title }}</h1>
+<input type="text" #box placeholder="Enter Name" name="username" />
+<button (click)="getData(box.name)">click me</button>
+<h2>{{ displayValue }}</h2>
+
+<button (click)="counter('minus')">--</button>
+<h1>count is : {{ count }}</h1>
+<button (click)="counter('add')">++</button>

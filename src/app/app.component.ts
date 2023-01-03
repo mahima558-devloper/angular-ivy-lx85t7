@@ -7,7 +7,13 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-  getData(val: string) {
-    console.log(val);
+  title = 'code of code';
+  count = 0;
+  displayValue: string = '';
+  getData(username: string) {
+    this.displayValue = username;
+  }
+  counter(type: string) {
+    type == 'add' ? this.count++ : this.count--;
   }
 }
